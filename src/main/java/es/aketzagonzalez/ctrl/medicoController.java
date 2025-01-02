@@ -1,5 +1,6 @@
 package es.aketzagonzalez.ctrl;
 
+import es.aketzagonzalez.jasperMedico.MainApp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -45,12 +46,18 @@ public class medicoController {
 
     @FXML
     void accionLimpiar(ActionEvent event) {
-
+    	txtCodMedico.clear();
+    	txtDireccionPaciente.clear();
+    	txtEspecialidadMedico.clear();
+    	txtNombreMedico.clear();
+    	txtNombrePaciente.clear();
+    	txtNumPaciente.clear();
+    	txtTratamientos.clear();
     }
 
     @FXML
     void accionSalir(ActionEvent event) {
-
+    	MainApp.getStage().close();
     }
 
 }
