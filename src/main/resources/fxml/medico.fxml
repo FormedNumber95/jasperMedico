@@ -62,7 +62,7 @@
                         <Insets right="5.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" text="Edpecialidad del médico:" GridPane.rowIndex="5">
+                  <Label contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" text="Especialidad del médico:" GridPane.rowIndex="5">
                      <GridPane.margin>
                         <Insets right="5.0" />
                      </GridPane.margin>
