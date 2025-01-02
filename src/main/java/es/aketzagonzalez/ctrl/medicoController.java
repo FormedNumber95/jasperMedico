@@ -20,38 +20,56 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
+/**
+ * The Class medicoController.
+ */
 public class medicoController {
 
+    /** The btn generar. */
     @FXML
     private Button btnGenerar;
 
+    /** The btn limpiar. */
     @FXML
     private Button btnLimpiar;
 
+    /** The btn salir. */
     @FXML
     private Button btnSalir;
 
+    /** The txt cod medico. */
     @FXML
     private TextField txtCodMedico;
 
+    /** The txt direccion paciente. */
     @FXML
     private TextField txtDireccionPaciente;
 
+    /** The txt especialidad medico. */
     @FXML
     private TextField txtEspecialidadMedico;
 
+    /** The txt nombre medico. */
     @FXML
     private TextField txtNombreMedico;
 
+    /** The txt nombre paciente. */
     @FXML
     private TextField txtNombrePaciente;
 
+    /** The txt num paciente. */
     @FXML
     private TextField txtNumPaciente;
 
+    /** The txt tratamientos. */
     @FXML
     private TextArea txtTratamientos;
 
+    /**
+     * Accion generar.
+     *
+     * @param event the event
+     */
     @FXML
     void accionGenerar(ActionEvent event) {
     	String errores=validarCampos();
@@ -87,6 +105,11 @@ public class medicoController {
     	}
     }
 
+    /**
+     * Validar campos.
+     *
+     * @return the string
+     */
     private String validarCampos() {
     	String errores="";
 		if(!txtCodMedico.getText().trim().isEmpty()) {
@@ -130,6 +153,11 @@ public class medicoController {
 		return errores;
 	}
 
+	/**
+	 * Accion limpiar.
+	 *
+	 * @param event the event
+	 */
 	@FXML
     void accionLimpiar(ActionEvent event) {
     	txtCodMedico.clear();
@@ -141,6 +169,11 @@ public class medicoController {
     	txtTratamientos.clear();
     }
 
+    /**
+     * Accion salir.
+     *
+     * @param event the event
+     */
     @FXML
     void accionSalir(ActionEvent event) {
     	MainApp.getStage().close();
